@@ -30,17 +30,16 @@ If I build a desktop app that will take a folder of Markdown files, and generate
 ## User Stories
 
 As a Markdown freak...
-	I need to keep my note-taking and productivity organisation in one workflow and one tool without switching to share.
-	I need to have a one-click process to generate my site without editing HTML or CSS.
+	I need to keep my note taking and productivity organisation in one workflow and one tool without having to switch to share.
+	I need to have a one click process to generate my site without having to edit HTML or CSS.
 		which means I need to have a home page generated from the files in the folder.
-		and not need to install Git, Go, and all the other things for Hugo.
+		and not needing to install Git, Go, and all the other things for Hugo.
 
 ## Wireframes and Designs
 
-![[New Wireframe 1 (5).png]]
+![](https://raw.githubusercontent.com/ChuffedDom/oh-hi-markdown/main/New%20Wireframe%201%20(5).png)
 
-![[App.png]]
-
+![](https://raw.githubusercontent.com/ChuffedDom/oh-hi-markdown/main/App.png)
 ## Acceptance Criteria
 
 - As a person who has downloaded the app, when I open it 
@@ -71,7 +70,7 @@ When a site is generating:
 			- First 20 characters from the file with a truncated ellipsis
 			- Read more text button with that is a hyperlink to that page
 
-![[Pasted image 20241212141822.png]]
+![](https://raw.githubusercontent.com/ChuffedDom/oh-hi-markdown/main/Pasted%20image%2020241212141822.png)
 
 - As the site is generating I see a progress bar and the "Generate site" button is disabled again.
 	- When generating is complete then I am prompted to view in Finder with an "open" button.
@@ -91,6 +90,33 @@ When a site is generating:
 - [ ] Figure how to build for MacOS
 - [ ] Local data persistence
 
+#### To-do List
+
+- [x] Select a folder on system
+	- [x] Button to open filepicker
+	- [x] Load into state
+		- [x] Class for folder
+	- [x] Rename file to feature
+- [ ] Scan folder for Markdown Files
+	- [x] Get all files
+	- [x] Loop through and get all .md files
+	- [x] Write to state
+- [ ] Create html file for all markdown files
+	- [x] Create folder for site in Documents
+	- [x] Loop through markdown files
+		- [x] Convert to HTML
+		- [x] Create HTML doc
+		- [x] Write HTML to doc
+		- [ ] Get date of file
+- [ ] User persistence
+- [ ] Create widget for folder/site
+	- [ ] Create index.html
+	- [ ] Loop through markdown files
+		- [ ] Get title
+		- [ ] Get first 200 characters from file
+		- [ ] Get date
+- [ ] Scroll on large display output
+
 Page Class
 - filename
 - htmlFilename
@@ -107,7 +133,7 @@ Page Class
 
 - Download Markdown from a page
 - Chronological or Chapters? Journal, Book, Notes (recursive)
-- Ship straight to Netlify
+- Ship straight to netlify
 - Ship straight to Firebase hosting
 - Build for Windows
 - Bring your own CSS
@@ -118,3 +144,5 @@ Page Class
 - RSS
 - If site already exists? Update flow
 - Image support
+- Build for Intel Mac
+- Style app to be more modern

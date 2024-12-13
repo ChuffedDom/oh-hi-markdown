@@ -1,0 +1,43 @@
+.column {
+  /*   border-style: dashed;
+    border-color: green; */
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+  gap: 5rem;
+}
+
+article {
+  padding: 1rem;
+}
+
+.inner-container {
+  /* Max width of a 1000px, or 100% - 2rem */
+  width: min(1000px, 100% - 2rem);
+  margin: clamp(1rem, 30vw, 30vh) 0;
+  box-sizing: border-box;
+}
+
+.benefit {
+  /* border: 2px dashed green; */
+  overflow-wrap: break-word;
+  word-break: break-word;
+  white-space: normal;
+  hyphens: auto;
+}
+
+.sized-box-small {
+  height: 1rem;
+  width: 1rem;
+}
+
+.sized-box-medium {
+  height: 3rem;
+  width: 3rem;
+}

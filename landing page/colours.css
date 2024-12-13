@@ -1,0 +1,115 @@
+:root {
+  --accent-seed: 350;
+  --accent: hsl(var(--accent-seed), 100%, 80%);
+  --dark: hsl(calc(var(--accent-seed) - 180), 50%, 8%);
+  --light: hsl(calc(var(--accent-seed) - 180), 5%, 95%);
+  --flourish: hsl(calc(var(--accent-seed) - 180), 50%, 30%);
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+}
+
+/* BASE STYLE FOR LINKS AS BUTTONS */
+.primary-button {
+  display: inline-block;
+  padding: 1rem 2rem;
+  font-size: 1.25rem;
+  font-weight: bold;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-decoration: none;
+}
+
+.primary-button:hover {
+  transform: scale(1.01);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+.primary-button:active {
+  transform: scale(0.99); /* Slightly shrink */
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.15); /* Slightly less shadow */
+}
+
+/* LIGHT CONTAINER */
+.light {
+  background-color: var(--light);
+  color: var(--dark);
+}
+
+.light .primary-button {
+  background-color: var(--dark);
+  color: var(--accent);
+}
+
+.light .primary-button:hover {
+  background-color: var(--accent);
+  color: var(--dark);
+}
+
+.light .primary-button:active {
+  background-color: var(--flourish);
+  color: var(--light);
+}
+
+.light .flourish {
+  text-decoration-color: var(--flourish);
+}
+
+/* DARK CONTAINER */
+.dark {
+  background-color: var(--dark);
+  color: var(--light);
+}
+
+.dark .primary-button {
+  background-color: var(--accent);
+  color: var(--dark);
+}
+
+.dark .primary-button:hover {
+  background-color: var(--light);
+  color: var(--flourish);
+}
+
+.dark .primary-button:active {
+  background-color: var(--flourish);
+  color: var(--light);
+}
+
+/* COLOURED CONTAINER */
+.coloured {
+  background-color: var(--flourish);
+  color: var(--light);
+}
+
+.coloured .primary-button {
+  background-color: var(--accent);
+  color: var(--dark);
+}
+
+.coloured .primary-button:hover {
+  background-color: var(--light);
+  color: var(--flourish);
+}
+
+.coloured .primary-button:active {
+  background-color: var(--dark);
+  color: var(--light);
+}
+
+.flourish {
+  text-decoration: underline;
+  text-decoration-color: var(--accent);
+  text-decoration-thickness: 5px;
+  text-underline-offset: 4px;
+}

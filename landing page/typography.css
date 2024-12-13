@@ -1,0 +1,217 @@
+/* GENERAL RESET */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%; /* Ensures consistent base font size */
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* Remove list styles */
+ol,
+ul {
+  list-style: none;
+}
+
+/* Set base font styles */
+body {
+  line-height: 1.5;
+  font-family: Arial, sans-serif;
+}
+
+/* Headings */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
+}
+
+/* Links */
+a {
+  text-decoration: none;
+  color: inherit; /* Inherit color for natural link styling */
+}
+
+/* Images */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Tables */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%; /* Full width tables */
+}
+
+th,
+td {
+  text-align: left;
+  padding: 0.5em;
+}
+
+/* Miscellaneous */
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote::before,
+blockquote::after,
+q::before,
+q::after {
+  content: "";
+}
+
+/* ...AND LETS BEGIN */
+
+:root {
+  --line-height: 1.618;
+  --base-font-size: 18px;
+}
+
+/* HEADINGS */
+
+h1 {
+  font-size: min(4rem, 15vw);
+  font-weight: 800;
+  letter-spacing: -0.14rem;
+}
+h2 {
+  font-size: 2.488rem;
+  font-weight: 600;
+  letter-spacing: -0.12rem;
+}
+h3 {
+  font-size: min(2rem, 8vw);
+  font-weight: 600;
+  letter-spacing: -0.1rem;
+}
+h4 {
+  font-size: 1.728rem;
+  font-weight: 500;
+  letter-spacing: 0.2rem;
+}
+h5 {
+  font-size: 1.44rem;
+  font-weight: 500;
+  letter-spacing: 0.5rem;
+}
+h6 {
+  font-size: 1.2rem;
+  font-weight: 500;
+  letter-spacing: -0.12rem;
+}
+
+p {
+  font-size: 1rem;
+  font-weight: 100;
+  letter-spacing: 0.02rem;
+  line-height: 2;
+  text-wrap: pretty;
+  max-width: 75ch;
+}
+
+a {
+  font-size: 1rem;
+  letter-spacing: 0.07rem;
+}
+
+article h1 {
+}
+article h2 {
+}
+article h3 {
+}
+article h4 {
+}
+article h5 {
+}
+article h6 {
+}

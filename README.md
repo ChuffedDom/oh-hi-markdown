@@ -83,12 +83,11 @@ When a site is generating:
 	- [ ] icon
 	- [ ] open graph
 - [x] Design app
-- [ ] Set up GitHub repo
-- [ ] Create HTML Template
+- [x] Set up GitHub repo
+- [x] Create HTML Template
 - [ ] Get a file's last modified date
 - [x] Test Markdown folder
 - [ ] Figure how to build for MacOS
-- [ ] Local data persistence
 
 #### To-do List
 
@@ -109,13 +108,14 @@ When a site is generating:
 		- [x] Write HTML to doc
 		- [ ] Get date of file
 - [ ] User persistence
-- [ ] Create widget for folder/site
-	- [ ] Create index.html
-	- [ ] Loop through markdown files
-		- [ ] Get title
-		- [ ] Get first 200 characters from file
+- [x] Create widget for folder/site
+	- [x] Create index.html ⭐️
+	- [x] Loop through markdown files
+		- [x] Get title
+		- [x] Get first 200 characters from file
 		- [ ] Get date
-- [ ] Scroll on large display output
+	- [ ] 
+- [x] Scroll on large display output
 
 Page Class
 - filename
@@ -128,6 +128,31 @@ Page Class
 - https://simplecss.org/
 - https://pub.dev/packages/filesystem_picker
 - https://pub.dev/packages/path_provider
+
+#### Copy for website
+This project is my submission from Sirge.com CodeJam 2024.
+
+As a Markdown freak, I take all my note, create all my documentation, even journal in Markdown.
+
+But, there are time where is it annoying, of course because of other people. When I share a bunch of pages they can't view the formatted Markdown files.
+
+This is because a lot of devices don't support it out of the box therefore, I have to put into Google Drive or some other nonsense.
+
+So this project will take a folder with Markdown files, and just create a folder of HTML files and a home page with link to them. Ready to push to your flavour of hosting.
+
+Now, are there bug? Sure. But I built the whole thing in Flutter in 8 hours.
+
+On reflection, I which I had deployed to web rather than a desktop app, but I have never done it before, so took it as an opportunity to learn.
+
+You can view the project in my repo at https://github.com/ChuffedDom/oh-hi-markdown
+
+Much love
+
+Dom
+
+
+
+
 
 ## Moving Forward
 
@@ -146,3 +171,5 @@ Page Class
 - Image support
 - Build for Intel Mac
 - Style app to be more modern
+- Fix shitty, massive icon
+

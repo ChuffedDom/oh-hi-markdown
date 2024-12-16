@@ -190,8 +190,8 @@ h6 {
 }
 
 p {
-  font-size: 1rem;
-  font-weight: 100;
+  font-size: 1.25rem;
+  font-weight: 400;
   letter-spacing: 0.02rem;
   line-height: 2;
   text-wrap: pretty;
